@@ -22,6 +22,6 @@ public class HealthServiceImpl implements HealthService {
       int failCount = statusCheckMap.get(Boolean.FALSE).size();
       double passPercentage = passCount*100/(passCount+failCount);
 
-        return String.format("Service is healthy %s  in last one minute ",passPercentage);
+        return String.format("Service is healthy %s percentage in last one minute ",passPercentage);
     }
 }
